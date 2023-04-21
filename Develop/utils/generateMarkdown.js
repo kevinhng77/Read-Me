@@ -19,21 +19,29 @@ function generateMarkdown(data) {
   console.log("generating markdown")
   console.log(data)
   return `# ${data.Title}
-## ${data.Description}
+## Description
+${data.Description}
 
-## ${data.TableOfContents}
+## Table of Contents
+ ${data.TableOfContents}
 
-## ${data.Installation}
+## Installation
+${data.Installation}
 
-## ${data.Usage}
+## Usage
+ ${data.Usage}
 
-## ${data.License}
+## License
+ ${data.License}
 
-## ${data.Contributing}
+## Contributing
+ ${data.Contributing}
 
-## ${data.Tests}
+## Tests 
+${data.Tests}
 
-## ${data.Questions}
+## Questions 
+${data.Questions}
 
 `;
 }
