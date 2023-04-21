@@ -18,19 +18,24 @@ function getName(){
 function generateMarkdown(data) {
   console.log("generating markdown")
   console.log(data)
-  return `# ${data.title}
+  return `# ${data.Title}
+## ${data.Description}
+
+## ${data.TableOfContents}
+
+## ${data.Installation}
+
+## ${data.Usage}
+
+## ${data.License}
+
+## ${data.Contributing}
+
+## ${data.Tests}
+
+## ${data.Questions}
 
 ${renderLicenseSection(data.license)}
-  
-## Table of Contents 
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-
-## Description
-${data.description}
 `;
 }
 
