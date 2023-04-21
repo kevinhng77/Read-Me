@@ -35,7 +35,6 @@ function generateMarkdown(data) {
 
 ## ${data.Questions}
 
-${renderLicenseSection(data.license)}
 `;
 }
 

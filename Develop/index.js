@@ -23,7 +23,7 @@ function init() {
         .then(answers => {
             var newStuff = generateMarkdown(answers)
             console.log(newStuff)
-            writeToFile(`${answers.title}.md`,newStuff)
+            writeToFile(`${answers.Title}.md`,newStuff)
         });
     //ask the users those questions here using inquirer
     //
